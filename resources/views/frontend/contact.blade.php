@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'Contact Us - Atroks Security Services')
+@section('meta_description', 'Contact Atroks Security Services to request a quote or consultation for security guards, CCTV, K9 units, or safe keeping.')
 
 @section('content')
     <!-- Page Header -->
@@ -27,7 +28,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-navy mb-2">Call Us 24/7</h3>
                     <p class="text-gray-600">+256 708 660 055</p>
-                    <p class="text-gray-600">+256 XXX XXX XXX</p>
+                    <p class="text-gray-600">+256 702 893 945</p>
                 </div>
 
                 <!-- Card 2: Email -->
@@ -36,8 +37,8 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3 class="text-xl font-bold text-navy mb-2">Email Us</h3>
-                    <p class="text-gray-600">info@atrokssecurity.com</p>
-                    <p class="text-gray-600">support@atrokssecurity.com</p>
+                    <p class="text-gray-600">info@atroksservices.com</p>
+                    <p class="text-gray-600">support@atroksservices.com</p>
                 </div>
 
                 <!-- Card 3: Location -->
@@ -61,11 +62,18 @@
                 <div data-reveal data-delay="100">
                     <h3 class="text-3xl font-bold text-navy mb-2">Get in Touch</h3>
                     <div class="w-16 h-1 bg-orange mb-6"></div>
+
+                    @if(session('success'))
+                        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
                     <p class="text-gray-600 mb-8">
                         Have a question or need a quote? Fill out the form below and our team will get back to you shortly.
                     </p>
                     
-                    <form action="#" method="POST" class="space-y-6">
+                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-6">
                         @csrf
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>

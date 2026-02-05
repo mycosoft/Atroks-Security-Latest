@@ -62,7 +62,7 @@
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-envelope text-orange mt-1 mr-3"></i>
-                            <span>info@atrokssecurity.com</span>
+                            <span>info@atroksservices.com</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-clock text-orange mt-1 mr-3"></i>
@@ -77,6 +77,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256708660055" target="_blank" class="fixed bottom-8 left-8 bg-green-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-green-700 transition z-50 flex items-center justify-center">
+        <i class="fab fa-whatsapp text-xl"></i>
+    </a>
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="fixed bottom-8 right-8 bg-orange text-white w-12 h-12 rounded-full shadow-lg hover:bg-navy transition opacity-0 invisible z-50 flex items-center justify-center">

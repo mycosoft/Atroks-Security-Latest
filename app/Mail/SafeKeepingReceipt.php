@@ -15,6 +15,7 @@ class SafeKeepingReceipt extends Mailable
     use Queueable, SerializesModels;
 
     public $record;
+
     public $qrCode;
 
     /**
@@ -23,7 +24,7 @@ class SafeKeepingReceipt extends Mailable
     public function __construct(SafeKeepingRecord $record)
     {
         $this->record = $record;
-        
+
         // Generate QR Code
         $clientName = $record->client ? $record->client->name : 'No Client';
         $qrContent = 'Ref: '.$record->reference_number."\nClient: ".$clientName."\nItem: ".$record->item_description;
@@ -36,7 +37,7 @@ class SafeKeepingReceipt extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Safe Keeping Receipt - ' . $this->record->reference_number,
+            subject: 'Safe Keeping Receipt - '.$this->record->reference_number,
         );
     }
 

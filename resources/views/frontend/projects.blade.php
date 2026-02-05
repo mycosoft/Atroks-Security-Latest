@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'Our Projects - Atroks Security Services')
+@section('meta_description', 'See recent projects and deployments by Atroks Security Services, showcasing security solutions for clients across industries.')
 
 @section('content')
     <!-- Page Header -->

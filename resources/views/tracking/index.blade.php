@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'Track Your Shipment - Atroks Security Services')
+@section('meta_description', 'Track your safe keeping item with Atroks Security Services. Enter your reference number to view the latest status.')
 
 @section('content')
     <!-- Page Header -->

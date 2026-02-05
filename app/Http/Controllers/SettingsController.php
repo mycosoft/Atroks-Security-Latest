@@ -86,15 +86,15 @@ class SettingsController extends Controller
         try {
             // Get current SMTP settings from database
             $smtpSettings = Settings::getByGroup('smtp');
-            
+
             // Use .env values as fallback, and filter out empty database values
-            $mailHost = !empty($smtpSettings['mail_host']) ? $smtpSettings['mail_host'] : env('MAIL_HOST');
-            $mailPort = !empty($smtpSettings['mail_port']) ? $smtpSettings['mail_port'] : env('MAIL_PORT');
-            $mailUsername = !empty($smtpSettings['mail_username']) ? $smtpSettings['mail_username'] : env('MAIL_USERNAME');
-            $mailPassword = !empty($smtpSettings['mail_password']) ? $smtpSettings['mail_password'] : env('MAIL_PASSWORD');
-            $mailEncryption = !empty($smtpSettings['mail_encryption']) ? $smtpSettings['mail_encryption'] : env('MAIL_ENCRYPTION');
-            $mailFromAddress = !empty($smtpSettings['mail_from_address']) ? $smtpSettings['mail_from_address'] : env('MAIL_FROM_ADDRESS');
-            $mailFromName = !empty($smtpSettings['mail_from_name']) ? $smtpSettings['mail_from_name'] : env('MAIL_FROM_NAME', 'ATROKS Security Services');
+            $mailHost = ! empty($smtpSettings['mail_host']) ? $smtpSettings['mail_host'] : env('MAIL_HOST');
+            $mailPort = ! empty($smtpSettings['mail_port']) ? $smtpSettings['mail_port'] : env('MAIL_PORT');
+            $mailUsername = ! empty($smtpSettings['mail_username']) ? $smtpSettings['mail_username'] : env('MAIL_USERNAME');
+            $mailPassword = ! empty($smtpSettings['mail_password']) ? $smtpSettings['mail_password'] : env('MAIL_PASSWORD');
+            $mailEncryption = ! empty($smtpSettings['mail_encryption']) ? $smtpSettings['mail_encryption'] : env('MAIL_ENCRYPTION');
+            $mailFromAddress = ! empty($smtpSettings['mail_from_address']) ? $smtpSettings['mail_from_address'] : env('MAIL_FROM_ADDRESS');
+            $mailFromName = ! empty($smtpSettings['mail_from_name']) ? $smtpSettings['mail_from_name'] : env('MAIL_FROM_NAME', 'ATROKS Security Services');
 
             // Validate that we have a from address
             if (empty($mailFromAddress)) {

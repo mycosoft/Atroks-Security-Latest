@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'Request a Quote - Atroks Security Services')
+@section('meta_description', 'Request a security quote from Atroks Security Services for guards, CCTV, K9 units, personal protection, or safe keeping.')
 
 @section('content')
     <!-- Page Header -->

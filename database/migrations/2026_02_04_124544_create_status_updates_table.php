@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('notes')->nullable(); // Admin notes
             $table->foreignId('updated_by')->nullable()->constrained('users')->onDelete('set null'); // Admin who made the update
             $table->timestamps();
-            
+
             // Index for faster queries
             $table->index('safe_keeping_record_id');
             $table->index('created_at');

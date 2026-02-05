@@ -76,6 +76,7 @@ class SafeKeepingController extends Controller
     {
         try {
             $record->delete();
+
             return redirect()->route('safe-keeping.index')->with('success', 'Record deleted successfully!');
         } catch (\Exception $e) {
             return redirect()->route('safe-keeping.index')->with('error', 'Failed to delete record. Please try again.');
@@ -90,10 +91,10 @@ class SafeKeepingController extends Controller
 
         try {
             \Mail::to($validated['email'])->send(new \App\Mail\SafeKeepingReceipt($record));
-            
-            return back()->with('success', 'Receipt sent successfully to ' . $validated['email']);
+
+            return back()->with('success', 'Receipt sent successfully to '.$validated['email']);
         } catch (\Exception $e) {
-            return back()->with('error', 'Failed to send email. Please check your email settings. Error: ' . $e->getMessage());
+            return back()->with('error', 'Failed to send email. Please check your email settings. Error: '.$e->getMessage());
         }
     }
 

@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
-@section('title', 'Atroks Security Services - Professional Security Solutions')
+@section('title', 'Atroks Security Services - Lets Talk Security')
+@section('meta_description', 'Atroks Security Services Limited offers professional security guards, CCTV surveillance, K9 units, and safe keeping services across Uganda and East Africa.')
 
 @section('content')
     <!-- Hero Section with Slideshow -->
@@ -8,7 +9,7 @@
         <!-- Slideshow Container -->
         <div class="absolute inset-0">
             <!-- Slide 1 -->
-            <div class="hero-slide active absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');">
+            <div class="hero-slide active absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style="background-image: url('{{ asset('images/herosection/security.jpeg') }}');">
                 <div class="absolute inset-0 bg-black/40"></div>
             </div>
             <!-- Slide 2 -->
@@ -173,7 +174,7 @@
                 <div data-reveal data-delay="200">
                     <div class="relative group">
                         <div class="absolute inset-0 bg-navy opacity-20 rounded-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
-                        <img src="{{ asset('images/atroks-guards.png') }}" alt="Personal Security Guard" class="relative rounded-lg shadow-2xl group-hover:shadow-3xl transition-shadow duration-300">
+                        <img src="{{ asset('images/security.jpeg') }}" alt="Personal Security Guard" class="relative rounded-lg shadow-2xl group-hover:shadow-3xl transition-shadow duration-300">
                     </div>
                 </div>
             </div>

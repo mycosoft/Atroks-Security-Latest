@@ -53,13 +53,13 @@ class SafeKeepingRecord extends Model
                 // WR + digits
                 $record->reference_number = 'WR'.now()->format('YmdHis').rand(1000, 9999);
             }
-            
+
             // Set default status if not set
             if (empty($record->status)) {
                 $record->status = 'Stored';
             }
         });
-        
+
         // Create initial status update when record is created
         static::created(function ($record) {
             $record->statusUpdates()->create([

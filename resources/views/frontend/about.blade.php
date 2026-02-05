@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'About Us - Atroks Security Services')
+@section('meta_description', 'Learn about Atroks Security Services Limited, our professional team, training, and commitment to reliable security solutions.')
 
 @section('content')
     <!-- Page Header -->
@@ -34,7 +35,7 @@
                     </div>
                     <div class="relative h-96 rounded-xl overflow-hidden shadow-lg group" data-reveal data-delay="200">
                         <!-- Placeholder for About Us Image -->
-                        <img src="https://placehold.co/800x600?text=Security+Team+Meeting" alt="Atroks Team" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                        <img src="{{ asset('images/office.jpeg') }}" alt="Atroks Team" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition duration-500"></div>
                     </div>
                 </div>

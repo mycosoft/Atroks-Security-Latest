@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Atroks Security Services - Professional Security Solutions')</title>
+    @php
+        $seoTitle = trim($__env->yieldContent('title', 'Atroks Security Services - Lets Talk Security'));
+        $seoDescription = trim($__env->yieldContent('meta_description', 'Atroks Security Services provides professional security guards, CCTV surveillance, K9 units, and safe keeping services in Uganda and East Africa.'));
+        $seoImage = trim($__env->yieldContent('meta_image', asset('images/atroks1.jpg')));
+        $seoUrl = trim($__env->yieldContent('canonical', url()->current()));
+        $seoType = trim($__env->yieldContent('meta_type', 'website'));
+        $seoRobots = trim($__env->yieldContent('meta_robots', 'index, follow'));
+    @endphp
+    <title>{{ $seoTitle }}</title>
+    <meta name="description" content="{{ $seoDescription }}">
+    <meta name="robots" content="{{ $seoRobots }}">
+    <link rel="canonical" href="{{ $seoUrl }}">
+    <meta property="og:title" content="{{ $seoTitle }}">
+    <meta property="og:description" content="{{ $seoDescription }}">
+    <meta property="og:type" content="{{ $seoType }}">
+    <meta property="og:url" content="{{ $seoUrl }}">
+    <meta property="og:image" content="{{ $seoImage }}">
+    <meta property="og:site_name" content="Atroks Security Services">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $seoTitle }}">
+    <meta name="twitter:description" content="{{ $seoDescription }}">
+    <meta name="twitter:image" content="{{ $seoImage }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>

@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'Frequently Asked Questions - Atroks Security Services')
+@section('meta_description', 'Answers to common questions about Atroks Security Services, including service areas, response times, staffing, and safe keeping.')
 
 @section('content')
     <!-- Page Header -->

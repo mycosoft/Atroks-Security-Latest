@@ -10,6 +10,7 @@ Route::get('/services', [\App\Http\Controllers\HomeController::class, 'services'
 Route::get('/projects', [\App\Http\Controllers\HomeController::class, 'projects'])->name('projects');
 Route::get('/faqs', [\App\Http\Controllers\HomeController::class, 'faqs'])->name('faqs');
 Route::get('/contact', [\App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::post('/contact', [\App\Http\Controllers\HomeController::class, 'submitContact'])->name('contact.submit');
 Route::get('/quote', [\App\Http\Controllers\HomeController::class, 'quote'])->name('quote');
 
 Route::get('/track', [\App\Http\Controllers\TrackingController::class, 'index'])->name('tracking.index');

@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'Our Services - Atroks Security Services')
+@section('meta_description', 'Explore Atroks Security Services offerings: security guards, CCTV surveillance, K9 units, personal protection, and safe keeping.')
 
 @section('content')
     <!-- Page Header -->
@@ -24,7 +25,7 @@
                 <!-- Service 1: Security Guards -->
                 <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="100">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Security+Guards" alt="Security Guards" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="{{ asset('images/security.jpeg') }}" alt="Security Guards" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-navy mb-3">Security Guarding</h3>
@@ -41,7 +42,7 @@
                 <!-- Service 2: CCTV -->
                 <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="200">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=CCTV+Surveillance" alt="CCTV Surveillance" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="{{ asset('images/cctv.jpeg') }}" alt="CCTV Surveillance" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-navy mb-3">CCTV Surveillance</h3>
@@ -58,7 +59,7 @@
                 <!-- Service 3: K9 Units -->
                 <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=K9+Security+Units" alt="K9 Security Units" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="{{ asset('images/K9.jpeg') }}" alt="K9 Security Units" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-navy mb-3">K9 Security Units</h3>
@@ -75,7 +76,7 @@
                 <!-- Service 4: Safe Keeping -->
                 <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="400">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Safe+Keeping" alt="Safe Keeping" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="{{ asset('images/vault.jpg') }}" alt="Safe Keeping" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-navy mb-3">Safe Keeping Services</h3>
@@ -92,7 +93,7 @@
                 <!-- Service 5: Personal Security -->
                 <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="500">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Personal+Protection" alt="Personal Protection" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="{{ asset('images/personal.jpeg') }}" alt="Personal Protection" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-navy mb-3">Personal Protection</h3>
@@ -109,7 +110,7 @@
                 <!-- Service 6: Event Security -->
                 <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="600">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://placehold.co/600x400?text=Event+Security" alt="Event Security" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="{{ asset('images/atroks1.jpg') }}" alt="Event Security" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-navy mb-3">Event Security</h3>

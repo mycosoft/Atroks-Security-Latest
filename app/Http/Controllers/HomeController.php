@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactForm;
+use Illuminate\Support\Facades\Mail;
+
 class HomeController extends Controller
 {
     public function index()
@@ -12,6 +15,21 @@ class HomeController extends Controller
     public function contact()
     {
         return view('frontend.contact');
+    }
+
+    public function submitContact()
+    {
+        $validated = request()->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:20',
+            'subject' => 'nullable|string|max:255',
+            'message' => 'required|string',
+        ]);
+
+        Mail::to('info@atroksservices.com')->send(new ContactForm($validated));
+
+        return redirect()->route('contact')->with('success', 'Thank you for your message! We will get back to you shortly.');
     }
 
     public function projects()
