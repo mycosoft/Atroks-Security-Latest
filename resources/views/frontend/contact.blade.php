@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Page Header -->
-    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');">
+    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');" data-reveal>
         <div class="absolute inset-0 bg-navy/80"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
@@ -17,11 +17,11 @@
     </div>
 
     <!-- Contact Info Cards -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-gray-50" data-reveal>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 -mt-24 relative z-20">
                 <!-- Card 1: Phone -->
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:-translate-y-2 transition duration-300">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:-translate-y-2 transition duration-300" data-reveal data-delay="150">
                     <div class="w-16 h-16 bg-orange/10 text-orange rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-phone-alt"></i>
                     </div>
@@ -31,7 +31,7 @@
                 </div>
 
                 <!-- Card 2: Email -->
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:-translate-y-2 transition duration-300">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:-translate-y-2 transition duration-300" data-reveal data-delay="250">
                     <div class="w-16 h-16 bg-orange/10 text-orange rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-envelope"></i>
                     </div>
@@ -41,7 +41,7 @@
                 </div>
 
                 <!-- Card 3: Location -->
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:-translate-y-2 transition duration-300">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:-translate-y-2 transition duration-300" data-reveal data-delay="350">
                     <div class="w-16 h-16 bg-orange/10 text-orange rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -54,11 +54,11 @@
     </section>
 
     <!-- Contact Form & Map Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white" data-reveal>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12">
                 <!-- Contact Form -->
-                <div>
+                <div data-reveal data-delay="100">
                     <h3 class="text-3xl font-bold text-navy mb-2">Get in Touch</h3>
                     <div class="w-16 h-1 bg-orange mb-6"></div>
                     <p class="text-gray-600 mb-8">
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- Google Map -->
-                <div class="h-full min-h-[400px] rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                <div class="h-full min-h-[400px] rounded-lg overflow-hidden shadow-lg border border-gray-200" data-reveal data-delay="200">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.778736348638!2d32.61864131475354!3d0.2858564998083861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbdc4d2b2b1a1%3A0x40b6e7f8e3f8f90!2sLukuli%20Rd%2C%20Kampala!5e0!3m2!1sen!2sug!4v1620000000000!5m2!1sen!2sug" 
                         width="100%" 

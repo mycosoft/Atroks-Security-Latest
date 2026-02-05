@@ -1,5 +1,5 @@
     <!-- Top Bar -->
-    <div class="bg-navy text-white py-3 text-sm">
+    <div class="hidden md:block bg-navy text-white py-3 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <!-- Contact Info -->

@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Page Header -->
-    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');">
+    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');" data-reveal>
         <div class="absolute inset-0 bg-navy/80"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Request a Quote</h1>
@@ -17,17 +17,17 @@
     </div>
 
     <!-- Quote Form Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-reveal>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-28 relative z-20">
-            <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 border border-gray-100">
-                <div class="text-center mb-10">
+            <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 border border-gray-100" data-reveal data-delay="100">
+                <div class="text-center mb-10" data-reveal data-delay="150">
                     <h2 class="text-3xl font-bold text-navy mb-4">Tailored Security Solutions</h2>
                     <p class="text-gray-600">
                         Please fill out the form below to help us understand your security needs. Our team will review your requirements and provide a customized quote within 24 hours.
                     </p>
                 </div>
 
-                <form action="#" method="POST" class="space-y-8">
+                <form action="#" method="POST" class="space-y-8" data-reveal data-delay="200">
                     @csrf
                     
                     <!-- Section: Personal Info -->

@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Page Header -->
-    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');">
+    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');" data-reveal>
         <div class="absolute inset-0 bg-navy/80"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Track Your Secure Package</h1>
@@ -17,10 +17,10 @@
     </div>
 
     <!-- Tracking Form Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-reveal>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-28 relative z-20">
-            <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 border border-gray-100">
-                <div class="text-center mb-10">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 border border-gray-100" data-reveal data-delay="100">
+                <div class="text-center mb-10" data-reveal data-delay="150">
                     <div class="inline-flex items-center justify-center w-20 h-20 bg-orange/10 rounded-full mb-6">
                         <i class="fas fa-search-location text-3xl text-orange"></i>
                     </div>
@@ -43,7 +43,7 @@
                 @endif
 
                 <!-- Tracking Form -->
-                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 mb-10">
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 mb-10" data-reveal data-delay="200">
                     <form action="{{ route('tracking.search') }}" method="post">
                         @csrf
                         <div>

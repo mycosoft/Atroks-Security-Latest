@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Page Header -->
-    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');">
+    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');" data-reveal>
         <div class="absolute inset-0 bg-navy/80"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
@@ -17,12 +17,12 @@
     </div>
 
     <!-- Services Grid -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-reveal>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-28 relative z-20">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Service 1: Security Guards -->
-                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="100">
                     <div class="h-48 overflow-hidden">
                         <img src="https://placehold.co/600x400?text=Security+Guards" alt="Security Guards" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
@@ -39,7 +39,7 @@
                 </div>
 
                 <!-- Service 2: CCTV -->
-                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="200">
                     <div class="h-48 overflow-hidden">
                         <img src="https://placehold.co/600x400?text=CCTV+Surveillance" alt="CCTV Surveillance" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
@@ -56,7 +56,7 @@
                 </div>
 
                 <!-- Service 3: K9 Units -->
-                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="300">
                     <div class="h-48 overflow-hidden">
                         <img src="https://placehold.co/600x400?text=K9+Security+Units" alt="K9 Security Units" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
@@ -73,7 +73,7 @@
                 </div>
 
                 <!-- Service 4: Safe Keeping -->
-                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="400">
                     <div class="h-48 overflow-hidden">
                         <img src="https://placehold.co/600x400?text=Safe+Keeping" alt="Safe Keeping" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
@@ -90,7 +90,7 @@
                 </div>
 
                 <!-- Service 5: Personal Security -->
-                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="500">
                     <div class="h-48 overflow-hidden">
                         <img src="https://placehold.co/600x400?text=Personal+Protection" alt="Personal Protection" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>
@@ -107,7 +107,7 @@
                 </div>
 
                 <!-- Service 6: Event Security -->
-                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition duration-300 group overflow-hidden" data-reveal data-delay="600">
                     <div class="h-48 overflow-hidden">
                         <img src="https://placehold.co/600x400?text=Event+Security" alt="Event Security" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     </div>

@@ -53,16 +53,16 @@
     </section>
 
     <!-- Welcome Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-reveal>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
+                <div data-reveal data-delay="100">
                     <div class="relative group">
                         <div class="absolute inset-0 bg-navy opacity-20 rounded-lg transform -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                         <img src="{{ asset('images/atroks1.jpg') }}" alt="Atroks Security Services" class="relative rounded-lg shadow-2xl group-hover:shadow-3xl transition-shadow duration-300">
                     </div>
                 </div>
-                <div>
+                <div data-reveal data-delay="200">
                     <h3 class="text-4xl font-bold text-navy mb-2">About Atroks Security Services</h3>
                     <div class="w-24 h-1 bg-orange mb-6"></div>
                     <p class="text-gray-600 mb-6 leading-relaxed">
@@ -80,9 +80,9 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white" data-reveal>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16" data-reveal data-delay="100">
                 <h3 class="text-4xl font-bold text-navy mb-4">Our Security Services</h3>
                 <div class="w-24 h-1 bg-orange mx-auto mb-4"></div>
                 <p class="text-gray-600 max-w-2xl mx-auto">
@@ -92,7 +92,7 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center">
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center" data-reveal data-delay="150">
                     <div class="bg-navy text-white w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i class="fas fa-shield-alt text-3xl"></i>
                     </div>
@@ -106,7 +106,7 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center">
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center" data-reveal data-delay="250">
                     <div class="bg-navy text-white w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i class="fas fa-camera text-3xl"></i>
                     </div>
@@ -120,7 +120,7 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center">
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center" data-reveal data-delay="350">
                     <div class="bg-navy text-white w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i class="fas fa-paw text-3xl"></i>
                     </div>
@@ -134,7 +134,7 @@
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center">
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition group flex flex-col h-full items-center text-center" data-reveal data-delay="450">
                     <div class="bg-navy text-white w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i class="fas fa-lock text-3xl"></i>
                     </div>
@@ -151,11 +151,11 @@
     </section>
 
     <!-- Personal Security Featured Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-reveal>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <!-- Content -->
-                <div>
+                <div data-reveal data-delay="100">
                     <h3 class="text-4xl font-bold text-navy mb-2">Personal Security</h3>
                     <div class="w-24 h-1 bg-orange mb-6"></div>
                     <p class="text-gray-600 mb-6 leading-relaxed">
@@ -170,7 +170,7 @@
                 </div>
 
                 <!-- Image -->
-                <div>
+                <div data-reveal data-delay="200">
                     <div class="relative group">
                         <div class="absolute inset-0 bg-navy opacity-20 rounded-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                         <img src="{{ asset('images/atroks-guards.png') }}" alt="Personal Security Guard" class="relative rounded-lg shadow-2xl group-hover:shadow-3xl transition-shadow duration-300">
@@ -181,8 +181,8 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="py-20 bg-gradient-to-r from-navy to-blue-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="py-20 bg-gradient-to-r from-navy to-blue-900 text-white" data-reveal>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal data-delay="100">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Secure Your Future?</h2>
             <p class="text-xl mb-8 text-gray-200 max-w-3xl mx-auto">
                 Get a free consultation and customized security solution tailored to your specific needs. Our experts are available 24/7 to assist you.
@@ -199,9 +199,9 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white" data-reveal>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16" data-reveal data-delay="100">
                 <h3 class="text-4xl font-bold text-navy mb-4">Client Testimonials</h3>
                 <div class="w-24 h-1 bg-orange mx-auto mb-4"></div>
                 <p class="text-gray-600 max-w-2xl mx-auto">
@@ -211,7 +211,7 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition">
+                <div class="bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition" data-reveal data-delay="150">
                     <div class="flex mb-4">
                         <i class="fas fa-star text-orange"></i>
                         <i class="fas fa-star text-orange"></i>
@@ -229,7 +229,7 @@
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition">
+                <div class="bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition" data-reveal data-delay="250">
                     <div class="flex mb-4">
                         <i class="fas fa-star text-orange"></i>
                         <i class="fas fa-star text-orange"></i>
@@ -247,7 +247,7 @@
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition">
+                <div class="bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition" data-reveal data-delay="350">
                     <div class="flex mb-4">
                         <i class="fas fa-star text-orange"></i>
                         <i class="fas fa-star text-orange"></i>
@@ -283,6 +283,7 @@
         .animate-fade-in-delay-2 {
             animation: fadeIn 1s ease-out 0.6s both;
         }
+
     </style>
 @endpush
 

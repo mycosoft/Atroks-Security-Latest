@@ -18,6 +18,26 @@
             }
         }
     </script>
+    <style>
+        [data-reveal] {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 1.05s ease, transform 1.05s ease;
+        }
+
+        [data-reveal].in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            [data-reveal] {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+    </style>
     @stack('styles')
 </head>
 <body class="bg-white flex flex-col min-h-screen">
@@ -62,6 +82,32 @@
                     behavior: 'smooth'
                 });
             });
+        }
+
+        // Section reveal animations
+        const revealElements = document.querySelectorAll('[data-reveal]');
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (prefersReducedMotion) {
+            revealElements.forEach((element) => element.classList.add('in-view'));
+        } else if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+
+                    const delay = entry.target.getAttribute('data-delay');
+                    if (delay) {
+                        entry.target.style.transitionDelay = `${delay}ms`;
+                    }
+
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                });
+            }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+
+            revealElements.forEach((element) => revealObserver.observe(element));
+        } else {
+            revealElements.forEach((element) => element.classList.add('in-view'));
         }
     </script>
     @stack('scripts')

@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Page Header -->
-    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');">
+    <div class="relative py-24 bg-cover bg-center" style="background-image: url('{{ asset('images/herosection/atroks2.png') }}');" data-reveal>
         <div class="absolute inset-0 bg-navy/80"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Frequently Asked Questions</h1>
@@ -17,10 +17,10 @@
     </div>
 
     <!-- FAQs Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-reveal>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-20">
             <!-- Search and Filter -->
-            <div class="mb-12 space-y-6">
+            <div class="mb-12 space-y-6" data-reveal data-delay="100">
                 <!-- Search Bar -->
                 <div class="relative max-w-2xl mx-auto">
                     <input type="text" id="faqSearch" placeholder="Search for answers..." class="w-full px-6 py-4 rounded-full border border-gray-200 focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange shadow-sm text-lg">
@@ -40,7 +40,7 @@
 
             <div class="space-y-4" id="faqList">
                 <!-- FAQ Item 1 (General) -->
-                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="general">
+                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="general" data-reveal data-delay="150">
                     <button class="w-full flex justify-between items-center p-6 bg-white cursor-pointer focus:outline-none" onclick="toggleFaq(this)">
                         <span class="text-lg font-bold text-navy text-left">What areas do you cover for security services?</span>
                         <span class="transform transition-transform duration-300 text-orange">
@@ -55,7 +55,7 @@
                 </div>
 
                 <!-- FAQ Item 2 (Services) -->
-                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="services">
+                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="services" data-reveal data-delay="220">
                     <button class="w-full flex justify-between items-center p-6 bg-white cursor-pointer focus:outline-none" onclick="toggleFaq(this)">
                         <span class="text-lg font-bold text-navy text-left">Are your security guards armed?</span>
                         <span class="transform transition-transform duration-300 text-orange">
@@ -70,7 +70,7 @@
                 </div>
 
                 <!-- FAQ Item 3 (General) -->
-                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="general">
+                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="general" data-reveal data-delay="290">
                     <button class="w-full flex justify-between items-center p-6 bg-white cursor-pointer focus:outline-none" onclick="toggleFaq(this)">
                         <span class="text-lg font-bold text-navy text-left">How do I request a quote?</span>
                         <span class="transform transition-transform duration-300 text-orange">
@@ -85,7 +85,7 @@
                 </div>
 
                 <!-- FAQ Item 4 (Billing) -->
-                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="billing">
+                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="billing" data-reveal data-delay="360">
                     <button class="w-full flex justify-between items-center p-6 bg-white cursor-pointer focus:outline-none" onclick="toggleFaq(this)">
                         <span class="text-lg font-bold text-navy text-left">Do you offer short-term security contracts?</span>
                         <span class="transform transition-transform duration-300 text-orange">
@@ -100,7 +100,7 @@
                 </div>
 
                 <!-- FAQ Item 5 (Services) -->
-                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="services">
+                <div class="faq-item group border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md" data-category="services" data-reveal data-delay="430">
                     <button class="w-full flex justify-between items-center p-6 bg-white cursor-pointer focus:outline-none" onclick="toggleFaq(this)">
                         <span class="text-lg font-bold text-navy text-left">What is your Safe Keeping service?</span>
                         <span class="transform transition-transform duration-300 text-orange">
@@ -115,7 +115,7 @@
                 </div>
             </div>
             
-            <div class="mt-12 text-center">
+            <div class="mt-12 text-center" data-reveal data-delay="100">
                 <p class="text-gray-600 mb-6">Can't find the answer you're looking for?</p>
                 <a href="{{ route('contact') }}" class="bg-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange transition inline-flex items-center">
                     Contact Support <i class="fas fa-headset ml-2"></i>
